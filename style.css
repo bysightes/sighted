@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0E0E0E;
+  color: #F5F5F5;
+  scroll-behavior: smooth;
+}
+
+header.hero {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+
+header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #C2A878;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #C2A878;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#about p, #contact p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.partners img {
+  width: 200px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.partners img:hover {
+  filter: grayscale(0%);
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  background: #C2A878;
+  color: #0E0E0E;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.contact-btn:hover {
+  background: #F5F5F5;
+  color: #0E0E0E;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #2A2A2A;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #C2A878;
+}
