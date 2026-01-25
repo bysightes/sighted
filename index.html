@@ -1,63 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SIGHTES LANDSCAPES</title>
-  <meta name="description" content="SIGHTES LANDSCAPES — Premium landscape design and facility firm blending art, architecture, and nature. Contact us at by.sightes@gmail.com.">
-  <meta name="keywords" content="landscape design, garden architecture, outdoor design, SIGHTES, Egypt, landscape engineering">
-  <meta name="author" content="SIGHTES LANDSCAPES">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sightes - Professional Landscape Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001a00; /* The dark green behind the logo */
+            color: white; /* White text for contrast */
+            transition: background-color 0.3s ease;
+        }
+        header {
+            /* No background-color, inherits from body */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffffff; /* White on hover */
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            /* No background-color, inherits from body */
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid #004d00; /* Subtle border for distinction */
+            transition: background-color 0.3s ease;
+        }
+        .hero {
+            /* Inherits dark green */
+            color: white;
+        }
+        .services .service-item {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(0, 77, 0, 0.1); /* Very subtle green tint for items */
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .services .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        .services img {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .portfolio .portfolio-item {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .portfolio img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio img:hover {
+            transform: scale(1.1);
+        }
+        .portfolio p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .contact button {
+            background-color: white;
+            color: #001a00;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .contact button:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-5px);
+        }
+        .contact .whatsapp-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .contact .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        .contact .whatsapp-btn img {
+            width: 60px;
+            height: auto;
+        }
+        footer {
+            /* No background-color, inherits from body */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <video autoplay muted loop playsinline>
-      <source src="https://cdn.pixabay.com/video/2021/09/01/88726-589113861_large.mp4" type="video/mp4">
-    </video>
-    <div class="overlay">
-      <h1>SIGHTES LANDSCAPES</h1>
-      <p>Where vision meets nature.</p>
-    </div>
-  </header>
+    <header>
+        <img src="https://ik.imagekit.io/bysight/new%20logo%20no%20background.png" alt="Sightes Logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>SIGHTES LANDSCAPES is a premium landscape design and facility firm delivering timeless outdoor experiences that merge art, architecture, and nature.</p>
-  </section>
+    <section id="hero" class="hero">
+        <h1>Welcome to Sightes</h1>
+        <p>Transforming spaces with expert landscape design for over 40 years.</p>
+    </section>
 
-  <section id="portfolio">
-    <h2>Our Work</h2>
-    <div class="grid">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60" alt="Landscape 1">
-      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=60" alt="Landscape 2">
-      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=60" alt="Landscape 3">
-      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=60" alt="Landscape 4">
-      <img src="https://images.unsplash.com/photo-1486308510493-aa64833634ef?auto=format&fit=crop&w=800&q=60" alt="Landscape 5">
-      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=60" alt="Landscape 6">
-    </div>
-  </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Sightes, we specialize in fixation landscape designing, creating stunning gardens, compounds, homes, indoor and outdoor plants, decorations, and water networks. With more than 40 years of experience, all our projects are executed by professional engineers to ensure top-notch quality and precision. Our team is dedicated to bringing your vision to life with sustainable, beautiful, and functional landscapes that enhance your environment. We pride ourselves on using innovative techniques and high-quality materials to deliver projects that stand the test of time.</p>
+    </section>
 
-  <section id="partners">
-    <h2>Our Partners</h2>
-    <div class="partners">
-      <img src="https://dummyimage.com/200x100/ccc/000.png&text=Partner+1" alt="Partner 1">
-      <img src="https://dummyimage.com/200x100/ccc/000.png&text=Partner+2" alt="Partner 2">
-      <img src="https://dummyimage.com/200x100/ccc/000.png&text=Partner+3" alt="Partner 3">
-    </div>
-  </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="https://ik.imagekit.io/bysight/PHOTO-2026-01-17-15-43-02.jpg" alt="Landscape Design">
+            <h3>Landscape Design & Fixation</h3>
+            <p>We provide comprehensive landscape design and fixation services, tailoring outdoor spaces to your needs. Our engineers ensure structural integrity and aesthetic appeal, using advanced techniques for long-lasting results.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://ik.imagekit.io/bysight/PHOTO-2026-01-17-15-44-04.jpg" alt="Garden Development">
+            <h3>Garden & Compound Development</h3>
+            <p>Transform barren areas into lush gardens and functional compounds. We handle everything from planning to execution, incorporating eco-friendly materials and designs that promote biodiversity.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://ik.imagekit.io/bysight/288fce9f-068d-4ebc-bcb3-420b37b52537.JPG" alt="Plant Installation">
+            <h3>Home & Indoor/Outdoor Plant Installation</h3>
+            <p>Enhance your living spaces with expertly installed plants. Whether indoor or outdoor, we select and place vegetation that thrives in your climate, adding greenery and tranquility to your home.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://ik.imagekit.io/bysight/2a8e6b43-7594-4f6a-bd21-1587ec076aaf.JPG" alt="Decoration & Water Networks">
+            <h3>Decoration & Water Networks</h3>
+            <p>Our decoration services include custom features like fountains and lighting, while our water network expertise ensures efficient irrigation systems that conserve water and maintain healthy landscapes.</p>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-buttons">
-      <a href="tel:+201112028607" class="contact-btn">📞 Eng. Amr Ryad Tawfik — 01112028607</a>
-      <a href="tel:+201010821066" class="contact-btn">📞 Eng. Saber Rabea — 01010821066</a>
-      <a href="mailto:by.sightes@gmail.com" class="contact-btn">📧 by.sightes@gmail.com</a>
-    </div>
-  </section>
+    <section id="portfolio" class="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-item">
+            <img src="https://ik.imagekit.io/bysight/PHOTO-2026-01-17-15-43-02.jpg" alt="Landscape Work 1">
+            <p>Stunning landscape design featuring lush greenery and modern fixation techniques for a residential garden.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://ik.imagekit.io/bysight/PHOTO-2026-01-17-15-44-04.jpg" alt="Landscape Work 2">
+            <p>Elegant compound development with integrated water features and sustainable plant installations.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://ik.imagekit.io/bysight/288fce9f-068d-4ebc-bcb3-420b37b52537.JPG" alt="Landscape Work 3">
+            <p>Indoor plant setup for a home, promoting air quality and aesthetic harmony.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://ik.imagekit.io/bysight/2a8e6b43-7594-4f6a-bd21-1587ec076aaf.JPG" alt="Landscape Work 4">
+            <p>Decorative outdoor space with custom lighting and efficient water network systems.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://ik.imagekit.io/bysight/1acfa04e-28bb-472f-a623-0bf85c898bb5.JPG" alt="Landscape Work 5">
+            <p>Comprehensive garden renovation showcasing our expertise in plant selection and layout.</p>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 SIGHTES LANDSCAPES. All rights reserved.</p>
-  </footer>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Engineer Amr Ryad</p>
+        <a href="https://wa.me/01112028607" target="_blank"><button class="whatsapp-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></button></a>
+        <a href="mailto:by.sightes@gmail.com"><button>Send Email</button></a>
+        <a href="tel:01017910894"><button>Call Us</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sightes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
